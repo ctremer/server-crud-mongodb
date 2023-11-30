@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel = "stylesheet" href = "styles.css">
+        <script src = "script.js"></script>
+    </head>
+
+    <body>
+    <header>
+        <h1>Video Games</h1>
+        <a href = "#" id = "add-link">+</a>
+    </header>
+
+    
+    <div class = "columns two-columns">
+        <div id = "videoGame-list" class = "columns"></div>
+        <div id = "videoGame-details-column">
+        <h2>Details</h2>
+
+        <div id = "videoGame-details"></div>
+        </div>
+    </div>
+
+
+        <div id = "add-edit-videoGame-container" class = "dialog transparent">
+        <span class = "close">&times;</span>
+        <h3 id = "add-edit-title">Video Game</h3>
+        <form id = "add-edit-videoGame-form" method = "post">
+            <input type = "hidden" name = "_id" value = "-1" />
+            <p>
+                <label for = "name">Video Game Name:</label>
+                <input type = "text" id = "name" name = "name" required />
+            </p>
+            <p>
+                <label for = "year">Year:</label>
+                <input type = "number" id = "year" name = "year" required />
+            </p>
+            <p>
+                <label for = "rating">Rating(IGN):</label>
+                <input type = "text" id = "rating" name = "rating" required>
+            </p>
+            <p>
+                <label for = "price">Price:</label>
+                <input type = "text" id = "price" name = "price" required>
+            </p>
+            <p>
+                <label for = "img">Upload Image:</label>
+                <input type = "file" id = "img" name = "img">
+            </p>
+
+            <p id = "characters-p">
+                <label class = "inline">Characters:</label>
+                <a href = "#" id = "add-character">Add Character</a>
+                <section id = "character-boxes"></section>
+            </p>
+            <p>
+                <button type = "submit">Submit</button>
+            </p>
+        </form>
+    </div>
+    </body>
+</html>
