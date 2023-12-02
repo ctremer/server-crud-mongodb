@@ -22,7 +22,13 @@ const getVideoGames = async () => {
       const h3 = document.createElement("h3");
       h3.innerHTML = videoGame.name;
       a.append(h3);
-  
+
+      if(videoGame.img){
+      const img = document.createElement("img");
+      img.src = videoGame.img;
+      section.append(img);
+    }
+
       a.onclick = (e) => {
         e.preventDefault();
         displayDetails(videoGame);
@@ -132,7 +138,6 @@ const getVideoGames = async () => {
 
     const form = document.getElementById("add-edit-videoGame-form");
     const formData = new FormData(form);
-    formData.delete("img");
     formData.append("characters", getCharacters());
 
     let response;
