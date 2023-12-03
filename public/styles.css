@@ -1,22 +1,18 @@
-:root {
-    --primary: coral;
-    --secondary: cornflowerblue;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: azure;
+    background-color: grey;
 }
 
 .videoGame {
     padding: 10px;
     margin: 10px;
-    background: lightblue;
+    background: rosyBrown;
     border-radius: 5px;
 }
 
 .videoGame img {
-    max-width: 90%;
+    max-width: 60%;
+    max-height: 50%;
     display: block;
     margin: auto;
 }
@@ -24,13 +20,13 @@ body {
 #videoGame-details-column {
     padding: 10px;
     margin: 10px;
-    background: lightblue;
+    background: rosybrown;
     border-radius: 5px;
 }
 
 #add-link {
     font-size: 2em;
-    border: 1px solid crimson;
+    border: 1px solid black;
 }
 
 #edit-link {
@@ -45,7 +41,7 @@ body {
 #add-edit-videoGame-container {
     padding: 10px;
     margin: 10px;
-    background: lightblue;
+    background: rosybrown;
     border-radius: 5px;
 }
 
@@ -136,7 +132,7 @@ label {
 
 a {
     text-decoration: none;
-    color: crimson;
+    color: black;
 }
 
 .hidden {
